@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSectionAbout from "../HeroSectionAbout";
 import Footer from "../Footer";
+import CardsAbout from "../CardsAbout";
 
 const About = () => {
   return (
@@ -31,13 +32,14 @@ const About = () => {
           </div>
           <div>
             <img
-              src="/images/aboutus.png"
+              src="/images/building-img.jpeg"
               alt="Our Story"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              className=" w-screen rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
       </div>
+      <CardsAbout/>
 
       {/* Grid Sections */}
       <div className="bg-white py-10">

@@ -4,8 +4,9 @@ import Footer from "../Footer";
 
 const ResearchAndDev = () => {
   return (
-    <div className="bg-gradient-to-b from-white via-white to-sky-400 min-h-screen">
+    <>
       <HeroSectionResearch />
+    <div className="bg-gradient-to-b from-white via-white to-sky-400 min-h-screen">
 
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
@@ -96,6 +97,7 @@ const ResearchAndDev = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 

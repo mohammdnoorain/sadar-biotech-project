@@ -1,12 +1,12 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
-import '../components/styleCssFiles/HeroSectionHome.css';
+import '../components/styleCssFiles/HeroSectionResearch.css';
 
 function HeroSectionResearch() {
   return (
-    <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+    <div className='hero-container-research'>
+      <img  src='/images/innovation-technology-bg.jpg' className='video12' />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
