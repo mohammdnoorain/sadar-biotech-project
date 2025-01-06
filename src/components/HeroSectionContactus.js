@@ -1,13 +1,13 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
-import '../components/styleCssFiles/HeroSectionHome.css';
+import '../components/styleCssFiles/HeroSectionContactus.css';
 
 function HeroSectionContactus() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
+    <img  src='/images/contactus.jpg' className='video12' />
+      <h1>Contact Us</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button

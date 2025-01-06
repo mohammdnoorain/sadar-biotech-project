@@ -6,8 +6,8 @@ import '../components/styleCssFiles/HeroSectionResearch.css';
 function HeroSectionResearch() {
   return (
     <div className='hero-container-research'>
-      <img  src='/images/innovation-technology-bg.jpg' className='video12' />
-      <h1>ADVENTURE AWAITS</h1>
+      <img  src='/images/slide_api-1.jpg' className='video12' />
+      <h1>Research & Development</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
