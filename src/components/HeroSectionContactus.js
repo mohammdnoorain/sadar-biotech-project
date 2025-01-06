@@ -5,7 +5,7 @@ import '../components/styleCssFiles/HeroSectionContactus.css';
 
 function HeroSectionContactus() {
   return (
-    <div className='hero-container'>
+    <div className='hero-container-contactus'>
     <img  src='/images/contactus.jpg' className='video12' />
       <h1>Contact Us</h1>
       <p>What are you waiting for?</p>

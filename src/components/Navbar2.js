@@ -32,7 +32,7 @@ const Navbar2 = () => {
 
 
   return (
-    <div className=" fixed top-0 left-0 w-full shadow-md  z-10 w-100 text-black flex justify-between items-center  mx-auto h-24 px-4 text-l bg-white">
+    <div className=" fixed top-0 left-0 w-full shadow-md  z-10 w-100 text-white flex justify-between items-center  mx-auto h-24 px-4 text-l bg-black">
       <h1 className=" text-3xl font-bold primary-color ml-4">
         <img src="/images/logo.jpg"  width='90px' />
       </h1>

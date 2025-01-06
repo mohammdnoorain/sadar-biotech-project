@@ -13,12 +13,11 @@ const About = () => {
           <div>
             <h1 className="text-4xl font-bold text-green-800 mb-4">Our Story</h1>
             <p className="text-lg text-blue-800 leading-relaxed mb-4">
-              Welcome to Sadar Biotech Private Limited, a trusted global brand.
-              Through our humble beginnings, we were established in 2017 with a
-              commitment towards transforming agriculture through innovation,
-              reliability, and sustainability. Over the years, we have grown
-              into a globally trusted name, symbolizing excellence in enhancing
-              and safeguarding agricultural produce.
+              
+
+Welcome to Sadar Biotech Private Limited, a trusted global brand. Through our humble beginnings, we were established in 2017 with a commitment towards transforming agriculture through innovation, reliability, and sustainability. Over the years, we have grown into a globally trusted name, symbolizing excellence in enhancing and safeguarding agricultural produce. Embodying our ethos of “Factory to Farm,” we take pride in our streamlined approach to delivering quality products directly from our manufacturing facilities to the agricultural landscape worldwide. We have three manufacturing units, two of them are in the state of Gujrat and one in the state of Chhattisgarh. By blending state-of-the-art  agricultural needs, we have carved a niche for ourselves in the market.
+
+
             </p>
             <p className="text-lg text-blue-800 leading-relaxed">
               Our offering was not only limited to the development of
@@ -32,7 +31,7 @@ const About = () => {
           </div>
           <div>
             <img
-              src="/images/building-img.jpeg"
+              src="/images/about3.png"
               alt="Our Story"
               className=" w-screen rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
             />
@@ -50,8 +49,7 @@ const About = () => {
               Our Vision & Mission
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              At Sadar Biotech, we envision a world where agriculture flourishes
-              with the support of cutting-edge scientific solutions.
+            At Sadar Biotech, we envision a world where agriculture flourishes with the support of cutting-edge scientific solutions. Our mission is to provide top-tier solutions to nourish farms and safeguard harvests, ensuring a sustainable and thriving future for agriculture. We believe in the mission of safeguarding agricultural produce by delivering high quality products.
             </p>
           </div>
 
@@ -61,8 +59,7 @@ const About = () => {
               Product Specialization
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              We specialize in the production and distribution of pesticides,
-              herbicides, fungicides, and surfactants.
+            n agricultural sector, we specialize in the production and distribution of pesticides, herbicides, fungicides and surfactants. Our “Factory to Farm” approach ensures that quality products directly reach the consumers of the agriculture landscape, embodying efficiency and excellence.
             </p>
           </div>
 
@@ -72,8 +69,7 @@ const About = () => {
               Global Presence
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              We have expanded our reach across continents, including Russia,
-              CIS countries, European markets, and the United States.
+            We have expanded our reach across continents, with a significant presence in Russia, the CIS countries, European markets including the UK and Ukraine, as well as select regions in Latin America as well as in the United States.
             </p>
           </div>
 
@@ -83,8 +79,8 @@ const About = () => {
               Pharmaceutical Excellence
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              We produce high-quality APIs and adhere to stringent quality
-              control standards.
+            In the pharmaceutical sector, we take pride in producing high-quality APIs, serving as the foundation for pharmaceutical formulations. Our commitment to stringent quality control and regulatory standards positions us as a
+            reliable partner for pharmaceutical companies striving for excellence.
             </p>
           </div>
 
@@ -94,8 +90,7 @@ const About = () => {
               Commitment To Sustainability
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              Sadar Biotech actively pursues eco-friendly formulations and
-              processes for agricultural sustainability.
+            Sadar Biotech actively pursues eco-friendly formulations and manufacturing processes, aligning our goals with a greener future for agriculture ecosystem. Our latest R&D initiatives focus on exploring bio-pesticides for next-generation agricultural sustainability.
             </p>
           </div>
 
@@ -105,8 +100,7 @@ const About = () => {
               Environmental Stewardship
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              We aim to harmonize progress with preservation, ensuring a
-              sustainable future.
+            We see ourselves as protectors and stewards of the environment, contributing to a world where progress and preservation coexist. Our responsibility extends beyond profit margins, reflecting our dedication to a sustainable and harmonious future.
             </p>
           </div>
         </div>
