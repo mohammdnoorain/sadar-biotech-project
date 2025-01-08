@@ -397,11 +397,11 @@ const Products = () => {
                 {item.table.map((tableItem, i) => (
                   <div key={i} className="mb-6">
                     <h3 className="text-xl font-semibold mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500">{tableItem.category}</h3>
-                    <table className="w-full border-collapse border border-gray-300 " >
+                    <table className="w-full border-collapse border border-blue-500 " >
                       <thead>
                         <tr className="bg-gray-100">
                           {Object.keys(tableItem.products[0] || {}).map((header, idx) => (
-                            <th key={idx} className="border border-gray-300 p-2 capitalize">
+                            <th key={idx} className="border border-blue-300 p-2 capitalize cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500">
                               {header}
                             </th>
                           ))}
@@ -409,9 +409,9 @@ const Products = () => {
                       </thead>
                       <tbody>
                         {tableItem.products.map((product, j) => (
-                          <tr key={j} className="hover:bg-gray-200 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500 ">
+                          <tr key={j} className="hover:bg-green-500 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-white ">
                             {Object.values(product).map((value, idx) => (
-                              <td key={idx} className="border border-gray-300 p-2">
+                              <td key={idx} className="border border-blue-500 p-2">
                                 {value}
                               </td>
                             ))}

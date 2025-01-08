@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1 className="text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300">
+      <h1 className="text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300 sm:hover:text-green-500 transition-colors duration-300">
             Our Products
             </h1>
       <div class="flex items-center justify-center min-h-[20vh] px-4">
@@ -24,13 +24,13 @@ function Cards() {
               src='images/fertiliser.png'
               text='Sadar Biotech manufactures cutting edge pharma products and intermediates which addresses relevant therapeutic areas.'
               label='API & Intermediates'
-              path='/services'
+              // path='/services'
             />
             <CardItem
               src='images/fertiliser2.webp'
               text='We offer a wide range of Pesticides, PGR, Fertilizer & Bio stimulants.'
               label='Pesticides & Fertlizer'
-              path='/services'
+              // path='/services'
             />
           </ul>
           <ul className='cards__items'>
@@ -38,14 +38,14 @@ function Cards() {
               src='images/cropped-surf.webp'
               text='We manufacture efficient, easy bonding surfactants and adjuvants with targeted application for different use.'
               label='Surfactant'
-              path='/services'
+              // path='/services'
             />
             <CardItem
               src='images/fertiliser6.webp'
               text='High-Quality Agro-Technical Products for Modern Farming Needs
 Boost Crop Protection and Yield with Our Range of Insecticides, Herbicides, and Bio-Stimulants'
               label='Agro-Technical Products'
-              path='/products'
+              // path='/products'
             />
             {/* <CardItem
               src='images/img-8.jpg'

@@ -20,12 +20,11 @@ function HeroSectionProduct() {
         </Button> */}
         <Button
           className='btns'
-          buttonStyle='btn--primary'
+          buttonStyle='btn--outline'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
           <Link to='/contact'> Contact Us</Link>
-          {/* <i className='far fa-play-circle' /> */}
+        
         </Button>
       </div>
     </div>

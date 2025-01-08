@@ -33,7 +33,7 @@ const ContactSection = () => {
   {/* Map */}
   <div className="w-full h-64 bg-gray-200 relative z-10">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509368!2d144.95373631531212!3d-37.81720997975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5775c6d43b77c7e!2sVictoria%20Market!5e0!3m2!1sen!2sau!4v1678192862191!5m2!1sen!2sau"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248930.01903409262!2d73.71256223828127!3d15.525503400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbae3f4e0ffaf%3A0x5ab7a4ffce5da3f9!2sAbove%20Puma%20Store%2C%20Floor%202%2C%20Chogm%20Rd%2C%20Porvorim%2C%20North%20Goa%2C%20Goa%20403521!5e0!3m2!1sen!2sin!4v1678192862191!5m2!1sen!2sin"
       width="100%"
       height="100%"
       style={{ border: 0 }}

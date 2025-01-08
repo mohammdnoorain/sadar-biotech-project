@@ -11,12 +11,13 @@ function HeroSectionResearch() {
       <h1>Research & Development</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        <Button
+      <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-     <Link to='/contact'> Contact Us</Link>
+          <Link to='/products'> Our Products</Link>
+        
         </Button>
         <Button
           className='btns'
@@ -24,8 +25,8 @@ function HeroSectionResearch() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-        <Link to='/products'> Our Products</Link>
-        {/* <i className='far fa-play-circle' /> */}
+          <Link to='/contact'> Contact Us</Link>
+          {/* <i className='far fa-play-circle' /> */}
         </Button>
       </div>
     </div>

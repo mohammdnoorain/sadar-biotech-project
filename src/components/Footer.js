@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join the Adventure newsletter to receive our best deals
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -54,7 +54,7 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
+            <Link to='https://www.facebook.com/Sadarbiotech/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
           </div>
@@ -63,7 +63,7 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/home' className='social-logo justify-between'>
+            <Link to='/' className='social-logo justify-between'>
               {/* <img src='/images/logo.jpg' width='150px'/> */} SadarBiotech
               <i class='fab fa-typo3' />
             </Link>

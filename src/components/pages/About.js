@@ -75,7 +75,7 @@ const About = () => {
               Product Specialization
             </h2>
             <p className="text-blue-800 leading-relaxed">
-              n agricultural sector, we specialize in the production and
+              In agricultural sector, we specialize in the production and
               distribution of pesticides, herbicides, fungicides and
               surfactants. Our “Factory to Farm” approach ensures that quality
               products directly reach the consumers of the agriculture
