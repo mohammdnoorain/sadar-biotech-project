@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import '../components/styleCssFiles/HeroSectionProducts.css';
@@ -10,20 +11,21 @@ function HeroSectionProduct() {
       <h1>Our Products</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        <Button
+        {/* <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
-        </Button>
+  <Link to='/products'> Our Products</Link>
+        </Button> */}
         <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          <Link to='/contact'> Contact Us</Link>
+          {/* <i className='far fa-play-circle' /> */}
         </Button>
       </div>
     </div>

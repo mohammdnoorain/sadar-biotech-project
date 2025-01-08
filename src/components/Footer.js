@@ -21,7 +21,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button  buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
       </section>
@@ -29,28 +29,28 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+            <Link to='/products'>How it works</Link>
+            <Link to='/research'>Testimonials</Link>
+            <Link to='/about'>Careers</Link>
+            <Link to='/about'>Investors</Link>
+            <Link to='/about'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/contact'>Support</Link>
+            <Link to='/contact'>Destinations</Link>
+            <Link to='/about'>Sponsorships</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          {/* <div class='footer-link-items'>
             <h2>Videos</h2>
             <Link to='/'>Submit Video</Link>
             <Link to='/'>Ambassadors</Link>
             <Link to='/'>Agency</Link>
             <Link to='/'>Influencer</Link>
-          </div>
+          </div> */}
           <div class='footer-link-items'>
             <h2>Social Media</h2>
             <Link to='/'>Instagram</Link>
@@ -63,22 +63,22 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              TRVL
+            <Link to='/home' className='social-logo justify-between'>
+              {/* <img src='/images/logo.jpg' width='150px'/> */} SadarBiotech
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>© SadarBiotech Pvt Ltd. Designed With ♥ By Noorain</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/Sadarbiotech/'
               target='_blank'
               aria-label='Facebook'
             >
               <i class='fab fa-facebook-f' />
             </Link>
-            <Link
+            {/* <Link
               class='social-icon-link instagram'
               to='/'
               target='_blank'
@@ -101,10 +101,10 @@ function Footer() {
               aria-label='Twitter'
             >
               <i class='fab fa-twitter' />
-            </Link>
+            </Link> */}
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://www.linkedin.com/in/sadarbiotech'
               target='_blank'
               aria-label='LinkedIn'
             >

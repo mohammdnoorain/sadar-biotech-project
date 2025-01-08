@@ -4,8 +4,10 @@ import CardItemAbout from './CardItemAbout';
 
 function CardsAbout() {
   return (
-    <div className='cards'>
-      <h1>OUR VISION, MISSION AND VALUES</h1>
+    <div className='cards'>    <h1 className="text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300">
+  OUR VISION, MISSION AND VALUES
+    </h1>
+      {/* <h1>OUR VISION, MISSION AND VALUES</h1> */}
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

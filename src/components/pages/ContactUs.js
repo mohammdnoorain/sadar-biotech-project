@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HeroSectionContactus from '../HeroSectionContactus';
 import Footer from '../Footer';
+import ContactSection from '../ContactSection';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -200,6 +201,7 @@ const ContactUs = () => {
       </div>
 
       {/* Footer */}
+      <ContactSection/>
       <Footer />
     </div>
   );

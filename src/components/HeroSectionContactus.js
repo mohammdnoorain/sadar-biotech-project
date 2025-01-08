@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import { Button } from './Button';
 import '../components/styleCssFiles/HeroSectionContactus.css';
@@ -15,7 +16,7 @@ function HeroSectionContactus() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+   <Link to='/contact'> Contact Us</Link>
         </Button>
         <Button
           className='btns'
@@ -23,7 +24,8 @@ function HeroSectionContactus() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+     <Link to='/products'> Our Products</Link>
+           {/* <i className='far fa-play-circle' /> */}
         </Button>
       </div>
     </div>

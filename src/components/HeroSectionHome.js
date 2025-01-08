@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import '../components/styleCssFiles/HeroSectionHome.css';
 
@@ -33,14 +34,15 @@ function HeroSectionHome() {
       <h1 className="slide-text">
         {getSlideText()}
       </h1>
-      <p>What are you waiting for?</p>
+      <p>What are you waiting for? </p>
       <div className='hero-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          <Link to='/products'> Our Products</Link>
+        
         </Button>
         <Button
           className='btns'
@@ -48,7 +50,8 @@ function HeroSectionHome() {
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          <Link to='/contact'> Contact Us</Link>
+          {/* <i className='far fa-play-circle' /> */}
         </Button>
       </div>
     </div>

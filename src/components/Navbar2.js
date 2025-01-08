@@ -32,9 +32,9 @@ const Navbar2 = () => {
 
 
   return (
-    <div className=" fixed top-0 left-0 w-full shadow-md  z-10 w-100 text-white flex justify-between items-center  mx-auto h-24 px-4 text-l bg-black">
+    <div className=" fixed top-14 left-0  w-full shadow-md  z-20 w-100 text-white flex justify-between items-center  mx-auto h-20 px-4 text-l bg-sky-500">
       <h1 className=" text-3xl font-bold primary-color ml-4">
-        <img src="/images/logo.jpg"  width='90px' />
+        {/* <img src="/images/logo.jpg"  width='90px' /> */}
       </h1>
 
       <ul className="hidden md:flex">
@@ -45,7 +45,7 @@ const Navbar2 = () => {
         <li className="p-5"><Link to='/contact'>Contact Us</Link></li>
       </ul>
 
-      <div onClick={handleNav} className="fixed top-4 right-4 block md:hidden sm:block">
+      <div onClick={handleNav} className="fixed top-17 right-4 block md:hidden sm:block">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
@@ -54,12 +54,12 @@ const Navbar2 = () => {
 
         className={
           nav
-            ? " z-10 text-grey-300 fixed h-full left-0 top-0 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500"
+            ? " z-50 text-grey-300 fixed h-full left-0 top-10 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500"
             : "fixed left-[-100%]"
         }
       >
         <h1 className=" text-3xl font-bold primary-color  ml-4">
-        <img src="/images/logo.jpg"  width='275px' />
+        {/* <img src="/images/logo.jpg"  width='275px' /> */}
         </h1>
         <ul className="p-8 text-2xl text-white">
         <li className="p-2"><Link to='/'>Home</Link></li>

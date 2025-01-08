@@ -13,10 +13,12 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+  margin-top: -65px;
     margin-bottom: 24px;
     padding: 24px;
     color: #fff;
+    background-color: rgb(56, 152, 230);
+    width: 100%;
   }
   
   .footer-subscription > p {
@@ -32,6 +34,7 @@
   .footer-subscription-text {
     margin-bottom: 24px;
     font-size: 20px;
+   
   }
   
   .footer-input {
@@ -117,7 +120,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width:60px;
+    
   }
   
   .social-logo {

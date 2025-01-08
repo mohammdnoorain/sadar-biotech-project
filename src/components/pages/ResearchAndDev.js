@@ -11,7 +11,7 @@ const ResearchAndDev = () => {
       {/* Main Content Area */}
       <div className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
         {/* Page Title */}
-        <h1 className="text-4xl font-extrabold text-center mb-12 tracking-wide text-yellow-300">
+        <h1 className="text-4xl font-extrabold text-center mb-12 tracking-wide text-yellow-300  hover:text-green-500 transition-colors duration-300">
           Research & Development
         </h1>
 
@@ -29,7 +29,7 @@ const ResearchAndDev = () => {
           </div>
           <div className="overflow-hidden rounded-lg shadow-xl hover:scale-105 transition-transform duration-500">
             <img
-              src="https://via.placeholder.com/500x300"
+              src="images/ecofriendly.jpg"
               alt="Research Image"
               className="object-cover w-full h-full"
             />
@@ -71,7 +71,7 @@ const ResearchAndDev = () => {
           </div>
           <div className="overflow-hidden rounded-lg shadow-xl hover:scale-105 transition-transform duration-500">
             <img
-              src="https://via.placeholder.com/500x300"
+              src="images/sustainability.jpg"
               alt="Sustainability Image"
               className="object-cover w-full h-full"
             />

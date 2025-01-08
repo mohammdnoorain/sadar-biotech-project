@@ -8,6 +8,7 @@ import ResearchAndDev from './components/pages/ResearchAndDev';
 import About from './components/pages/About';
 import Navbar2 from './components/Navbar2';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TopNavbar from './components/TopNavbar ';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
    <>
       <Router>
       {/* <Navbar/> */}
+      <TopNavbar/>
       <Navbar2/>
       <Routes>
         <Route path="/" element={<Home />} />
