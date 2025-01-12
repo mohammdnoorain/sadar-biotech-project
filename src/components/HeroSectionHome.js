@@ -31,7 +31,7 @@ function HeroSectionHome() {
   return (
     <div className='hero-container'>
       <video src='/videos/10744336-sd_960_540_24fps.mp4' autoPlay loop muted />
-      <h1 className="slide-text">
+      <h1 className="   slide-text ">
         {getSlideText()}
       </h1>
       <p>What are you waiting for? </p>

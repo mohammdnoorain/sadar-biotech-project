@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import HeroSectionContactus from '../HeroSectionContactus';
 import Footer from '../Footer';
 import ContactSection from '../ContactSection';
@@ -26,6 +27,30 @@ const ContactUs = () => {
     e.preventDefault();
     console.log(formData);
     // Add form submission logic here
+
+    const serviceID = 'service_6v8qvub';
+    const templateID = 'template_ezi76nf';
+    const userID = 'SftXTRJ8K1da2gx5v';
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+        setFormData({
+          companyName: '',
+          name: '',
+          designation: '',
+          email: '',
+          phone: '',
+          subject: '',
+          enquiry: '',
+        });
+      })
+      .catch((error) => {
+        console.error('FAILED...', error);
+        alert('Failed to send the message. Please try again.');
+      });
+
   };
 
   return (

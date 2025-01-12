@@ -393,36 +393,49 @@ const Products = () => {
               {item.name}
             </h2>
             {activeIndex === index && (
-              <div>
-                {item.table.map((tableItem, i) => (
-                  <div key={i} className="mb-6">
-                    <h3 className="text-xl font-semibold mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500">{tableItem.category}</h3>
-                    <table className="w-full border-collapse border border-blue-500 " >
-                      <thead>
-                        <tr className="bg-gray-100">
-                          {Object.keys(tableItem.products[0] || {}).map((header, idx) => (
-                            <th key={idx} className="border border-blue-300 p-2 capitalize cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500">
-                              {header}
-                            </th>
-                          ))}
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {tableItem.products.map((product, j) => (
-                          <tr key={j} className="hover:bg-green-500 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-white ">
-                            {Object.values(product).map((value, idx) => (
-                              <td key={idx} className="border border-blue-500 p-2">
-                                {value}
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                ))}
-              </div>
-            )}
+             <div>
+             {item.table.map((tableItem, i) => (
+               <div key={i} className="mb-6">
+                 <h3 className="text-xl font-semibold mb-4 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500">
+                   {tableItem.category}
+                 </h3>
+                 <div className="overflow-x-auto">
+                   <table className="w-full border-collapse border border-blue-500">
+                     <thead>
+                       <tr className="bg-gray-100">
+                         {Object.keys(tableItem.products[0] || {}).map((header, idx) => (
+                           <th
+                             key={idx}
+                             className="border border-blue-300 p-2 capitalize text-sm md:text-base cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-blue-500"
+                           >
+                             {header}
+                           </th>
+                         ))}
+                       </tr>
+                     </thead>
+                     <tbody>
+                       {tableItem.products.map((product, j) => (
+                         <tr
+                           key={j}
+                           className="hover:bg-green-500 cursor-pointer transition-transform duration-300 hover:scale-105 hover:text-white"
+                         >
+                           {Object.values(product).map((value, idx) => (
+                             <td
+                               key={idx}
+                               className="border border-blue-500 p-2 text-sm md:text-base"
+                             >
+                               {value}
+                             </td>
+                           ))}
+                         </tr>
+                       ))}
+                     </tbody>
+                   </table>
+                 </div>
+               </div>
+             ))}
+           </div>
+                       )}
           </div>
         ))}
       </div>
