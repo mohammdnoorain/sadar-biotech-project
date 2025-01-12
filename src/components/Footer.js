@@ -118,7 +118,7 @@ function Footer() {
               <i className='fab fa-typo3' />
             </Link>
           </div>
-          <small className='website-rights'>© SadarBiotech Pvt Ltd. Designed With ♥ By Noorain</small>
+          <small className='website-rights'>© SadarBiotech Pvt Ltd. Designed With ♥ By NeoTech</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link facebook'
