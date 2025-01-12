@@ -29,7 +29,7 @@ const Navbar2 = () => {
   }, [nav]);
 
   return (
-    <div className="fixed top-14 left-0 w-full shadow-md z-20 text-white flex justify-between items-center h-16 px-4 bg-sky-500">
+    <div className="fixed top-20 left-0 w-full shadow-md z-20 text-white flex justify-between items-center h-16 px-4 bg-sky-500">
       <h1 className="text-3xl font-bold primary-color ml-4">
         {/* Add logo or brand here */}
       </h1>

@@ -15,15 +15,13 @@ function Cards() {
   </p>
 </div>
 
-
-
-      <div className='cards__container'>
-        <div className='cards__wrapper'>
+       <div className='cards__container'>
+         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/fertiliser.png'
-              text='Sadar Biotech manufactures cutting edge pharma products and intermediates which addresses relevant therapeutic areas.'
-              label='API & Intermediates'
+               src='images/fertiliser.png'
+               text='Sadar Biotech manufactures cutting edge pharma products and intermediates which addresses relevant therapeutic areas.'
+               label='API & Intermediates'
               // path='/services'
             />
             <CardItem
@@ -40,12 +38,18 @@ function Cards() {
               label='Surfactant'
               // path='/services'
             />
-            <CardItem
+
+          
+
+             <CardItem
               src='images/fertiliser6.webp'
               text='High-Quality Agro-Technical Products for Modern Farming Needs
-Boost Crop Protection and Yield with Our Range of Insecticides, Herbicides, and Bio-Stimulants'
+              Boost Crop Protection and Yield with Our Range of Insecticides, Herbicides, and Bio-Stimulants'
+
               label='Agro-Technical Products'
+
               // path='/products'
+
             />
             {/* <CardItem
               src='images/img-8.jpg'
@@ -53,6 +57,9 @@ Boost Crop Protection and Yield with Our Range of Insecticides, Herbicides, and 
               label='Adrenaline'
               path='/sign-up'
             /> */}
+             
+             
+
           </ul>
         </div>
       </div>
