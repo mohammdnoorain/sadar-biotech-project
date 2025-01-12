@@ -95,17 +95,17 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='/contact'>Contact</Link>
             <Link to='/contact'>Support</Link>
-            <Link to='/contact'>Destinations</Link>
+          
             <Link to='/about'>Sponsorships</Link>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+           
             <Link to='https://www.facebook.com/Sadarbiotech/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='https://www.linkedin.com/in/sadarbiotech'>LinkedIn</Link>
+           
           </div>
         </div>
       </div>
