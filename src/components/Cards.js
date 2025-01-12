@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1 className="text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300 sm:hover:text-green-500 transition-colors duration-300">
+      <h1 className="mt-24 text-4xl font-bold text-blue-600 hover:text-green-500 transition-colors duration-300 sm:hover:text-green-500 transition-colors duration-300">
             Our Products
             </h1>
       <div class="flex items-center justify-center min-h-[20vh] px-4">

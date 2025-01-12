@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { useState ,useRef,useEffect} from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 const Navbar2 = () => {
   const [nav, setNav] = useState(false);
   const menuRef = useRef(null);
@@ -17,58 +17,131 @@ const Navbar2 = () => {
       }
     };
 
-    // Add event listener when the nav is open
     if (nav) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     }
 
-    // Cleanup event listener on component unmount
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [nav]);
 
-
   return (
-    <div className=" fixed top-14 left-0  w-full shadow-md  z-20 w-100 text-white flex justify-between items-center  mx-auto h-16 px-4 text-l bg-sky-500">
-      <h1 className=" text-3xl font-bold primary-color ml-4">
-        {/* <img src="/images/logo.jpg"  width='90px' /> */}
+    <div className="fixed top-14 left-0 w-full shadow-md z-20 text-white flex justify-between items-center h-16 px-4 bg-sky-500">
+      <h1 className="text-3xl font-bold primary-color ml-4">
+        {/* Add logo or brand here */}
       </h1>
 
       <ul className="hidden md:flex">
-      <li className="p-5"><Link to='/'>Home</Link></li>
-        <li className="p-5"><Link to='/about'>About</Link></li>
-        <li className="p-5"><Link to='/products'>Products</Link></li>
-        <li className="p-5"><Link to='/research'>R&D</Link></li>
-        <li className="p-5"><Link to='/contact'>Contact Us</Link></li>
+        {/* Navigation Links with Hover Effect */}
+        <li className="p-5 group">
+          <Link
+            to="/"
+            className=" text-xl relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+          >
+            Home
+          </Link>
+        </li>
+        <li className="p-5 group">
+          <Link
+            to="/about"
+            className="text-xl relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+          >
+            About
+          </Link>
+        </li>
+        <li className="p-5 group">
+          <Link
+            to="/products"
+            className="text-xl relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+          >
+            Products
+          </Link>
+        </li>
+        <li className="p-5 group">
+          <Link
+            to="/research"
+            className="text-xl relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+          >
+            R&D
+          </Link>
+        </li>
+        <li className="p-5 group">
+          <Link
+            to="/contact"
+            className="text-xl relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+          >
+            Contact Us
+          </Link>
+        </li>
       </ul>
 
-      <div onClick={handleNav} className="fixed top-17 right-4 block md:hidden sm:block">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
-      </div>
-
       <div
-       ref={menuRef}
-
-        className={
-          nav
-            ? " z-50 text-grey-300 fixed h-full left-0 top-10 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500"
-            : "fixed left-[-100%]"
-        }
+        onClick={handleNav}
+        className="fixed top-17 right-4 block md:hidden sm:block"
       >
-        <h1 className=" text-3xl font-bold primary-color  ml-4">
-        {/* <img src="/images/logo.jpg"  width='275px' /> */}
-        </h1>
-        <ul className="p-8 text-2xl text-white">
-        <li className="p-2"><Link to='/'>Home</Link></li>
-        <li className="p-2"><Link to='/about'>About</Link></li>
-        <li className="p-2"><Link to='/products'>Products</Link></li>
-        <li className="p-2"><Link to='/research'>R&D</Link></li>
-        <li className="p-2"><Link to='/contact'>Contact Us</Link></li>
-        </ul>
+        {nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
       </div>
+
+      {/* Mobile Menu */}
+      {/* Mobile Menu */}
+<div
+  ref={menuRef}
+  className={
+    nav
+      ? "z-50 text-grey-300 fixed h-full left-0 top-10 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500"
+      : "fixed left-[-100%]"
+  }
+>
+  <h1 className="text-3xl font-bold primary-color ml-4">
+    {/* Add logo or brand here */}
+  </h1>
+  <ul className="p-8 text-2xl text-white">
+    <li className="p-2 group">
+      <Link
+        to="/"
+        className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+      >
+        Home
+      </Link>
+    </li>
+    <li className="p-2 group">
+      <Link
+        to="/about"
+        className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+      >
+        About
+      </Link>
+    </li>
+    <li className="p-2 group">
+      <Link
+        to="/products"
+        className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+      >
+        Products
+      </Link>
+    </li>
+    <li className="p-2 group">
+      <Link
+        to="/research"
+        className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+      >
+        R&D
+      </Link>
+    </li>
+    <li className="p-2 group">
+      <Link
+        to="/contact"
+        className="relative after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-orange-500 after:transition-all after:duration-300 group-hover:after:w-full"
+      >
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 };
