@@ -3,6 +3,7 @@ import '../components/styleCssFiles/Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+import { GiPlantsAndAnimals } from "react-icons/gi";
 
 function Footer() {
   const [formData, setFormData] = useState({
@@ -115,7 +116,7 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               SadarBiotech
-              <i className='fab fa-typo3' />
+              <GiPlantsAndAnimals />
             </Link>
           </div>
           <small className='website-rights'>© SadarBiotech Pvt Ltd. Designed With ♥ By NeoTech</small>
